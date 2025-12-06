@@ -1304,8 +1304,27 @@ html, body {
         gap: var(--spacing-xl);
     }
 
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        justify-content: center;
+        text-align: center;
+    }
+
     .contact-form-container {
         padding: var(--spacing-lg);
+    }
+
+    .social-links {
+        justify-content: center;
     }
 
     /* Footer móvil */
