@@ -27,11 +27,11 @@ web-site/
 
 ## Secciones
 
-1. **Hero** - Presentación con estadísticas animadas
+1. **Hero** - Presentación con propuesta de valor
 2. **Servicios** - Desarrollo Web, Marketing Digital, Software, Analítica, Consultoría, Branding
-3. **Nosotros** - Historia y valores
-4. **Proyectos** - Portfolio y casos de éxito
-5. **Testimonios** - Opiniones de clientes
+3. **Nosotros** - Historia, visión y valores de startup emergente
+4. **Capacidades** - Lo que podemos crear para ti
+5. **Por qué elegirnos** - Propuesta de valor diferenciadora
 6. **Contacto** - Formulario y datos de contacto
 
 ## Características
@@ -65,7 +65,7 @@ Luego abre `http://localhost:8080` en tu navegador.
 
 ```bash
 # Construir y ejecutar
-docker-compose up -d
+docker compose up -d
 
 # O manualmente
 docker build -t crecesw-web .
@@ -77,7 +77,7 @@ El sitio estará disponible en `http://localhost:8080`
 ### Detener Docker
 
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ## Personalización
@@ -105,10 +105,10 @@ Edita `index.html` para modificar:
 
 ## Contacto
 
-- **Email:** hola@crecesw.com
-- **Teléfono:** +52 123 456 7890
-- **Ubicación:** Ciudad de México, México
+- **Email:** crecesw@proton.me
+- **Teléfono:** +56 9 6903 0631
+- **Ubicación:** Chile
 
 ## Licencia
 
-© 2024 CreceSW. Todos los derechos reservados.
+© 2025 CreceSW. Todos los derechos reservados.
