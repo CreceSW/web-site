@@ -5,27 +5,27 @@
 
 /* Variables CSS */
 :root {
-    /* Colores principales */
-    --primary: #667eea;
-    --primary-dark: #5a67d8;
-    --secondary: #764ba2;
-    --accent: #f093fb;
+    /* Colores principales - Paleta minimalista */
+    --primary: #000000;
+    --primary-dark: #000000;
+    --secondary: #545454;
+    --accent: #00C9A7; /* Verde turquesa como acento */
 
     /* Gradientes */
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-    --gradient-dark: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    --gradient-primary: linear-gradient(135deg, #000000 0%, #545454 100%);
+    --gradient-secondary: linear-gradient(135deg, #00C9A7 0%, #00A389 100%);
+    --gradient-dark: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
 
     /* Colores de texto */
-    --text-primary: #1a1a2e;
-    --text-secondary: #4a5568;
-    --text-light: #718096;
+    --text-primary: #000000;
+    --text-secondary: #545454;
+    --text-light: #757575;
     --text-white: #ffffff;
 
     /* Fondos */
     --bg-white: #ffffff;
-    --bg-light: #f7fafc;
-    --bg-dark: #1a1a2e;
+    --bg-light: #f5f5f5;
+    --bg-dark: #000000;
 
     /* Sombras */
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -124,7 +124,7 @@ ul {
 
 /* Texto Gradiente */
 .gradient-text {
-    background: var(--gradient-primary);
+    background: var(--gradient-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -146,12 +146,13 @@ ul {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--accent);
     color: var(--text-white);
     border-color: transparent;
 }
 
 .btn-primary:hover {
+    background: #00A389;
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
@@ -190,8 +191,8 @@ ul {
 .section-badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(102, 126, 234, 0.1);
-    color: var(--primary);
+    background: rgba(0, 201, 167, 0.1);
+    color: var(--accent);
     font-size: 0.875rem;
     font-weight: 600;
     border-radius: var(--radius-full);
@@ -385,8 +386,8 @@ ul {
 .hero-badge {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: rgba(102, 126, 234, 0.1);
-    color: var(--primary);
+    background: rgba(0, 201, 167, 0.1);
+    color: var(--accent);
     font-size: 0.875rem;
     font-weight: 600;
     border-radius: var(--radius-full);
@@ -549,7 +550,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(0, 201, 167, 0.1);
     border-radius: var(--radius-lg);
     margin-bottom: var(--spacing-lg);
 }
@@ -557,7 +558,7 @@ ul {
 .service-icon svg {
     width: 30px;
     height: 30px;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .service-card h3 {
@@ -585,14 +586,14 @@ ul {
     content: '✓';
     position: absolute;
     left: 0;
-    color: var(--primary);
+    color: var(--accent);
     font-weight: 600;
 }
 
 .service-link {
     display: inline-flex;
     align-items: center;
-    color: var(--primary);
+    color: var(--accent);
     font-weight: 600;
     transition: gap var(--transition);
 }
@@ -778,7 +779,7 @@ ul {
     display: inline-block;
     font-size: 0.75rem;
     font-weight: 600;
-    color: var(--primary);
+    color: var(--accent);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: var(--spacing-sm);
@@ -803,7 +804,7 @@ ul {
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .project-stat .stat-desc {
@@ -842,8 +843,8 @@ ul {
     font-size: 4rem;
     font-family: Georgia, serif;
     line-height: 1;
-    color: var(--primary);
-    opacity: 0.3;
+    color: var(--accent);
+    opacity: 0.5;
     margin-bottom: var(--spacing-md);
 }
 
@@ -950,14 +951,14 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(0, 201, 167, 0.1);
     border-radius: var(--radius-lg);
 }
 
 .contact-icon svg {
     width: 24px;
     height: 24px;
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .contact-item h4 {
@@ -970,7 +971,7 @@ ul {
 }
 
 .contact-item a:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 /* Social Links */
@@ -1096,7 +1097,7 @@ ul {
 }
 
 .footer-links a:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 .footer-bottom {
@@ -1114,7 +1115,7 @@ ul {
 }
 
 .footer-legal a:hover {
-    color: var(--primary);
+    color: var(--accent);
 }
 
 /* =============================================
