@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     // Inicializar todos los módulos
+    initThemeToggle();
     initNavbar();
     initMobileMenu();
     initSmoothScroll();
@@ -13,6 +14,38 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initActiveNavLink();
 });
+
+/**
+ * Theme Toggle - Modo claro/oscuro
+ */
+function initThemeToggle() {
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Función para establecer el tema
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    }
+    
+    // Función para obtener el tema inicial (predeterminado: claro)
+    function getInitialTheme() {
+        const savedTheme = localStorage.getItem('theme');
+        return savedTheme || 'light';
+    }
+    
+    // Establecer el tema inicial
+    const initialTheme = getInitialTheme();
+    setTheme(initialTheme);
+    
+    // Toggle del tema al hacer click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        });
+    }
+}
 
 /**
  * Navegación - Cambia el estilo al hacer scroll
